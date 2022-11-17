@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import "github.com/FelixMorenoT/go-rampup/internal/app"
 
 func main() {
-	fmt.Print("Jello!")
+	app := app.NewApp()
+
+	app.Start("8080")
 }
